@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #040404;;
+    color: #fff;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px ;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+ width: 100%;
+}
+.header_text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header_text h1{
+ font-size:60px ;
+ margin-top: 20px;
+
+}
+.header_text h1 span{
+    color: #ff004f;
+}
+/* .........ABOUT......... */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis: 60%;  
+    
+}
+.about-col-2 p{
+    margin-top: 20px;
+   font-size: medium;
+   line-height: 1.6;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+/*------------------resume----------------------*/
+.resume .resume-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color:white;
+  }
+  
+.resume .resume-item {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #ff004f;
+    position: relative;
+  }
+  
+  .resume .resume-item h4{
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif; 
+    color: #ff004f;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item p{
+    font-family:'Times New Roman', Times, serif; 
+    margin-bottom: 10px;
+  }
+  
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: blue;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #ff004f ;
+   
+  }
+  
+
+
+/* ------------Skills------------ */
+#services{
+    margin-top: 40px;
+}
+#services>.container>.skills{
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: #262626;
+    padding: 30px 10px;
+    font-family: 13px;
+    margin-top: 30px; 
+}
+#services>.container>.skills>.skill{
+    height: 500px;
+    width: 350px;
+    border-radius: 15px;
+    transition: background 0.5s , transform 0.6s;
+    
+/*    
+    justify-content: space-eve; */
+    background-color: antiquewhite;
+    color: #040404;
+    border: 3px solid black;
+    gap: 10px;
+    padding: 20px 30px;
+    &:hover{
+        color:cornsilk ;
+        background-color: #ff004f;
+        transform:scale(1.1);
+        transition: 1s;
+        
+    }
+    cursor:  pointer;
+    
+}
+#services>.container>.skills>.skill>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+#services>.container>.skills>.skill>ul>li{
+   margin-bottom: 10px;
+   font-size:medium;
+}
+/**************** contact *************/
+i.fab.fa-facebook {
+    font-size: 20px;  /* Change size of the icon */
+    color: #3b5998;  /* Facebook blue color */
+}
+i.fab.fa-instagram {
+    font-size: 20px;  /* Change size of the icon */
+    color: #E4405F;  /* Instagram pink color */
+}
+i.fab.fa-linkedin {
+    font-size: 20px;  /* Change size of the icon */
+    color: #0077b5;  /* LinkedIn blue color */
+}
+#contact{
+    /* background-color: #3b5998; */
+}
+
+.contact-left{
+    /* background-color: burlywood; */
+    width: 100%;
+}
+.inner{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#butt{
+    width: 150px;
+    height: 50px;
+    background-color: #E4405F;
+    border-radius: 30px;
+}
+.contact>.container>.row>.contact-left>.inner>.social-icons{
+    gap: 100px;
+}
